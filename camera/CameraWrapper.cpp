@@ -42,7 +42,6 @@ static char CHROMA_FLASH_ON[] = "chroma-flash-on";
 static char CHROMA_FLASH_OFF[] = "chroma-flash-off";
 //static char KEY_QC_CAMERA_MODE[] = "camera-mode";
 static char **fixed_set_params = NULL;
-static char KEY_QC_MORPHO_HDR[] = "morpho-hdr";
 
 static int camera_device_open(const hw_module_t *module, const char *name,
         hw_device_t **device);
