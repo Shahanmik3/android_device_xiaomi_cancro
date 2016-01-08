@@ -1,3 +1,9 @@
+# Device
+ro.product.device=cancro
+ro.product.model=MI 3W
+ro.build.product=cancro
+
+
 #ril
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
