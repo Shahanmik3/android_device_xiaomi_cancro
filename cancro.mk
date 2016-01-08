@@ -105,7 +105,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
-    libxml2
+    libxml2 \
+    Snap
 
 # Radio
 PRODUCT_PACKAGES += \
