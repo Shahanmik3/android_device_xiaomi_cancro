@@ -82,15 +82,14 @@ BLUETOOTH_HCI_USE_MCT := true
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 
 # Graphics
-BOARD_EGL_CFG := $(CANCRO_PATH)/configs/egl.cfg
-USE_OPENGL_RENDERER := true
-TARGET_USES_C2D_COMPOSITION := true
-TARGET_USES_ION := true
-OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-HAVE_ADRENO_SOURCE:= false
-VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
-SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
-TARGET_USE_COMPAT_GRALLOC_PERFORM := true
+USE_OPENGL_RENDERER               := true
+TARGET_USES_C2D_COMPOSITION       := true
+TARGET_USE_COMPAT_GRALLOC_PERFORM := false
+TARGET_USES_ION                   := true
+OVERRIDE_RS_DRIVER                := libRSDriver_adreno.so
+HAVE_ADRENO_SOURCE                := false
+VSYNC_EVENT_PHASE_OFFSET_NS       := 7500000
+SF_VSYNC_EVENT_PHASE_OFFSET_NS    := 5000000
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
