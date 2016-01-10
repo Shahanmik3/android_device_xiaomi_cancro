@@ -86,7 +86,7 @@ FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 # Graphics
 USE_OPENGL_RENDERER               := true
 TARGET_USES_C2D_COMPOSITION       := true
-TARGET_USE_COMPAT_GRALLOC_PERFORM := true
+TARGET_USE_COMPAT_GRALLOC_PERFORM := false
 TARGET_USES_ION                   := true
 OVERRIDE_RS_DRIVER                := libRSDriver_adreno.so
 HAVE_ADRENO_SOURCE                := false
