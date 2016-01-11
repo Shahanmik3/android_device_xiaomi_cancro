@@ -213,6 +213,7 @@ BOARD_SEPOLICY_DIRS += \
 # Kernel Toolchain
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-5.3/bin
 GRAPHITE_OPTS := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Rom Toolchain
 TARGET_GCC_VERSION_EXP := 4.9
