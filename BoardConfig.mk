@@ -213,3 +213,5 @@ GRAPHITE_OPTS := true
 
 # Rom Toolchain
 TARGET_GCC_VERSION_EXP := 4.9
+
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
