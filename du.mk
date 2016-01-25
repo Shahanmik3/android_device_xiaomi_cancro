@@ -24,7 +24,7 @@ $(call inherit-product, device/xiaomi/cancro/cancro.mk)
 $(call inherit-product, vendor/du/config/nfc_enhanced.mk)
 
 # Inherit some common CM stuff (mini)
-$(call inherit-product, vendor/du/config/common_mini_phone.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Product configuration
 PRODUCT_NAME := du_cancro
