@@ -12,10 +12,24 @@ rild.libargs=-d /dev/smd0
 # 1:ERROR 2:HIGH 4:LOW 0:NOLOGS 7:AllLOGS
 vidc.debug.level=1
 
-# System property for cabl
-ro.qualcomm.cabl=0
-ro.qcom.ad=1
-ro.qcom.ad.calib.data=/system/etc/calib.cfg
+# Display
+ro.sf.lcd_density=480
+
+# Art
+dalvik.vm.dex2oat-swap=false
+
+# Charging
+persist.usb.hvdcp.detect=true
+
+# GPS
+ro.gps.agps_provider=1
+
+# Camera
+camera2.portability.force_api=1
+persist.camera.cpp.duplication=false
+
+# NFC
+ro.nfc.port=I2C
 
 ro.qc.sdk.sensors.gestures=true
 ro.qc.sdk.gestures.camera=false
