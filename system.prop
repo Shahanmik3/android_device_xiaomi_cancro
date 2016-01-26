@@ -18,6 +18,33 @@ ro.qc.sdk.camera.facialproc=false
 #display
 ro.sf.lcd_density=480
 
+# Art
+dalvik.vm.dex2oat-swap=false
+
+# Charging
+persist.usb.hvdcp.detect=true
+
+# GPS
+ro.gps.agps_provider=1
+
+# Camera
+camera2.portability.force_api=1
+persist.camera.cpp.duplication=false
+
+# NFC
+ro.nfc.port=I2C
+
+# Data
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+ro.data.large_tcp_window_size=true
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
+persist.data.tcpackprio.enable=true
+
+# Cne
+persist.cne.feature=0
+
 # Audio
 ro.qc.sdk.audio.ssr=false
 ro.qc.sdk.audio.fluencetype=fluence
