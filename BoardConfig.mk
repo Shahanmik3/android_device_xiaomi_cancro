@@ -46,7 +46,8 @@ USE_CLANG_PLATFORM_BUILD := true
 COMMON_GLOBAL_CFLAGS += -D__ARM_USE_PLD -D__ARM_CACHE_LINE_SIZE=64
 
 # Kernel
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+TARGET_TOOLS_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/uber-arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/uber-arm-eabi-4.9/bin/arm-eabi-
 BOARD_KERNEL_CMDLINE := console=none vmalloc=340M androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 androidboot.selinux=permissive
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_DTBTOOL_ARGS := -2
@@ -218,9 +219,3 @@ BOARD_SEPOLICY_DIRS += \
 
 -include vendor/xiaomi/cancro/BoardConfigVendor.mk
 
-# Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-5.3/bin
-GRAPHITE_OPTS := true
-
-# Rom Toolchain
-TARGET_GCC_VERSION_EXP := 4.9
