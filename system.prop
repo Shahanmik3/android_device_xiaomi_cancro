@@ -31,9 +31,17 @@ persist.camera.cpp.duplication=false
 # NFC
 ro.nfc.port=I2C
 
+# Sensors
 ro.qc.sdk.sensors.gestures=true
 ro.qc.sdk.gestures.camera=false
 ro.qc.sdk.camera.facialproc=false
+
+# Data
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+ro.data.large_tcp_window_size=true
+wifi.interface=wlan0
+persist.data.tcpackprio.enable=true
 
 #display
 ro.sf.lcd_density=440
