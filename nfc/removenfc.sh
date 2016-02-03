@@ -34,5 +34,3 @@ elif [ $RAW_ID == 1972 ]; then
  rm -rf /system/etc/*nfc*
  rm -rf /system/etc/permissions/*nfc*
 fi
-
-exit 0
